@@ -1,0 +1,14 @@
+.title {
+    font-family: montserrat;
+    font-weight: 900;
+    font-size: 72px;
+}
+
+    
+body {
+    font-family: roboto;
+}
+
+div {
+    border: 1px solid green;
+}
