@@ -17,16 +17,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lemonada|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/mastermind.js" ></script>
     </head>
-<body>
-    <div class="container" >
-    <h1 class="MM col-md-1 offset-md-4" >MasterMind</h1>
-    </div>
 
+
+
+
+
+<body>
+
+
+    <div class="container" >
+    <a class="mm">MstrMnd</a>
+    </div>
+    <br>
+<div class="container">
     <table class="table-bordered" >
         <thead>
         </thead>
@@ -38,7 +46,7 @@
                     <td> <div class="btn">D</div> </td>
 
 
-                    <td colspan=4> <div id="check">MasterMind</div></td>
+                    <td colspan=4> <div id="check"><a class="btn check">&nbsp; Start &nbsp;</a></div></td>
             </tr>
 
             <tr class="mm-active">
@@ -85,21 +93,17 @@
 
 
     </table>
+</div>
 
-
-
+<br>
 
 
 
 
 
     <div class="container" >
-        <a class="col-xs-4">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2> Anleitung </h2>
+        <a class="col-xs-12 col-md-8 col-l-4">
+            <strong> Anleitung: </strong>
             Ein Spieler (der Codierer) legt zu Beginn einen vierstelligen geordneten Farbcode fest, der aus sechs Farben ausgewählt wird; eine Farbe kann auch mehrmals verwendet werden. Der andere Spieler (der Rater) versucht, den Code herauszufinden. Dazu setzt er einen gleichartigen Farbcode als Frage; beim ersten Zug blind geraten, bei den weiteren Zügen mit Hilfe der Antworten zu den vorangegangenen Zügen.
 
             Auf jeden Zug hin bekommt der Rater die Information, wie viele Stifte er in Farbe und Position richtig gesetzt hat und wie viele Stifte zwar die richtige Farbe haben, aber an einer falschen Position stehen. Ein Treffer in Farbe und Position wird durch einen schwarzen Stift angezeigt, ein farblich richtiger Stift an falscher Stelle durch einen weißen Stift. Es gibt auch Versionen mit roten statt schwarzen Stiften zur Anzeige von Treffern in Farbe und Position. Alle Fragen und Antworten bleiben bis zum Ende des Spiels sichtbar.
