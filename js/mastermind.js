@@ -7,16 +7,16 @@ function getColor() {
 }
 
 function check() {
-        var result = []
-        $('.mm-active select').each(function(idx) {
-            result.push($(this).val())
-        })
-        console.log(result)
-        var tableRow = '<tr><td>'+result[0]+'</td><td>'+result[1]+'</td><td>'+result[2]+'</td><td>'+result[3]+'</td> <td></td><td></td><td></td><td></td></tr>';
-        $('.mm-active').after(tableRow)
+    var result = []
+    $('.mm-active select').each(function(idx) {
+        result.push($(this).val())
+    })
+    console.log(result)
+    var tableRow = '<tr><td>'+result[0]+'</td><td>'+result[1]+'</td><td>'+result[2]+'</td><td>'+result[3]+'</td> <td></td><td></td><td></td><td></td></tr>';
+    $('.mm-active').after(tableRow)
 
-        console.log(tableRow)
-    }
+    console.log(tableRow)
+}
 
 $(document).ready(function() {
     $('#check').click(check)
