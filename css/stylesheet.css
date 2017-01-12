@@ -146,3 +146,7 @@ body {
     width: 200px;
     height: 150px;
 }
+
+.foreground {
+    z-index: 98;
+}
