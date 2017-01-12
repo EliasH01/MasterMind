@@ -6,10 +6,19 @@ function getColor() {
     return colors[Math.round(Math.random() * max)];
 }
 
-var game = [getColor(),getColor(),getColor(),getColor()];
+var game = []
+var rounds = 12;
+
+function init() {
+    game = [getColor(),getColor(),getColor(),getColor()];
+    $('.mm-result').fadeOut()
+   // $('.mm-result').remove() 
+    $('div[id^="chooser-"]').removeClass().addClass('bullet')
+}
 
 function check() {
     var result = []
+    console.log (game)
     $('div[id^="chooser-"]').each(function(idx) {
         var classArr = $(this).attr('class').split(' ');
         if (classArr[1] != undefined) {
@@ -22,22 +31,20 @@ function check() {
     var clr = 0;
     var clrpos = 0;
 
-    $(result).each(function(idx,item) {
-        console.log("outter: ", item, idx)
-        $(test).each(function(idx2, item2) {
-            console.log("inner", item2, idx2)
-            if (item2 == item) {
-                if (idx2 == idx) {
-                    clrpos++;
-                } else {
-                    clr++;
-                }
-                test[idx2] = undefined;
-            }
-        })
-    })
+    for (var idx = 0; idx < result.length; idx++) {
+        if (result[idx] == test[idx]) {
+            clrpos++
+            test[idx] = undefined
+        }
+    }
 
-
+    for (var idx = 0; idx < result.length; idx++) {
+        var idxFound = test.indexOf(result[idx])
+        if (idxFound >= 0) {
+            test[idxFound] = undefined
+            clr++
+        }
+    }
 
     console.log("Schwarze Möppen:" , clrpos, ", Weiße Möppen: ", clr)
     var tableRow = '<tr class="mm-result"><td><div class="bullet '+result[0]+'"> </div></td><td><div class="bullet '+result[1]+'"> </div></td><td><div class="bullet '+result[2]+'"> </div></td><td><div class="bullet '+result[3]+'"> </div></td> ';
@@ -61,9 +68,16 @@ function check() {
 function setBullet(columnIdx, value) {
     $('#chooser-' + columnIdx).removeClass();
     $('#chooser-' + columnIdx).addClass('bullet ' + value);
-    $('#overlay-' + columnIdx).hide();
+    $('#overlay-' + columnIdx).slideUp(150);
 }
 
 $(document).ready(function() {
     $('#check').click(check)
+    $('.logo').click(init)
+    $('div[id^="overlay-"]').each(function(idx, elem) {
+        $('#chooser-' + (idx + 1)).click(function(){
+            $('#overlay-' + (idx + 1)).slideDown(200)
+        })
+    })
+    init()
 });

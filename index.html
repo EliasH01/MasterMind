@@ -28,18 +28,17 @@
 
 
 <body>
-
-
+    <br>
+    <br>
+    <div class="logo">
+        <img style="width: 300px;" src="img/logo.svg" alt="MstrMnd">
+    </div>
+                  <h3 class="restart-button">Press to restart</h3>
     <div class="row" >
 
-    <br>
-    <br>
 
-    <div class="col-xs-2 col-xs-offset-5">
-    <img style="width: 200px;
-                height: 70px;"
-        src="https://gm1.ggpht.com/8y5BE2KE9CCHGrW9erZ2uG4MBvDin2ToEc_Lj2CyJlr25QJHaR6RhtRhb0svDqMmuoKBHw10OyZ75_XWFGIglI9VrZxCloMhPfeU-nJive_dVVZjG0ysdULLm5XFfzwUUSM5tcseqB6l2yXwdeqpTdI-OLfaYJkkALtHW0WDHuvSEsJmLEsDgy8VH-xev1EeAWKMcQtzix_286VHXNeXJUOzdUhDGxd-uivbYXM9gHHA1RS3zMlMeq1THQ8rEDkeArCtXzPnjW0nSCSsN6xI7aG6u2rhqmgeDIu0_xaBghvBg3eLdOSWZSNmcCDDMmNmHycijXH1xHS-6wcZLm4fQyhvMWaXtP4HPeYmXCGtm_93b9SLTRuIbOiZUuDbCZn0_c6ukREwyHu_9dQ0phwChPGemuml7HFrwBdJKPw1TGceVCJZ5u7YPK4uYBB772LxEqXFks38x5aUzA_rckBe6RFDFlUWjV_Jvtj3uFpWQ3ohWb4i7CDj0vknQ7y6go5Ufa4NW9m3a_S79NvaJoXuwEq41gg1U9HC4WYRyem5BEcTqBxN9xbvcEk_zsqXJze6b8DIVPuwCgVH_Hf9wAXMvvCRmKrYqJJ21EodYrrEPWSeC5eaywre7tpbulOh_wJxOoK7NpbUnIB1LRctXkRtAATRgrXFHELYojuv0bn0RogWJp9Z8o1H5WjyWtVrhefqfSaBknurmE9t=w1920-h940-l75-ft" alt="MstrMnd">
-    </div>
+
+
     <br>
     <br>
     <br>
@@ -48,16 +47,16 @@
     <br>
 
 <div class="row">
-    <div class="col-xs-4 col-md-offset-2">
+    <div class="col-xs-12 col-offset-xs-0 col-md-offset-2">
 <div class="container">
-    <table class="table-bordered" >
+    <div class="mm-wrapper">
+    <table class="table-bordered mm-table" >
         <thead>
         </thead>
         <tbody>
             <tr class="mm-active">
                     <td> 
-                        <div class="mm-wrapper">
-                            <div id="chooser-1" class="bullet" onclick="$('#overlay-1').show()"> </div>
+                            <div id="chooser-1" class="bullet"> </div>
                             <div id="overlay-1" class="chooser-overlay">
                                 <div class="bullet A" onclick="setBullet(1, 'A')"> </div>
                                 <div class="bullet B" onclick="setBullet(1, 'B')"> </div>
@@ -66,12 +65,10 @@
                                 <div class="bullet E" onclick="setBullet(1, 'E')"> </div>
                                 <div class="bullet F" onclick="setBullet(1, 'F')"> </div>
                             </div>
-                        </div> 
                     </td>
 
                     <td> 
-                        <div class="mm-wrapper">
-                            <div id="chooser-2" class="bullet" onclick="$('#overlay-2').show()"> </div>
+                            <div id="chooser-2" class="bullet"> </div>
                             <div id="overlay-2" class="chooser-overlay">
                                 <div class="bullet A" onclick="setBullet(2, 'A')"> </div>
                                 <div class="bullet B" onclick="setBullet(2, 'B')"> </div>
@@ -80,12 +77,10 @@
                                 <div class="bullet E" onclick="setBullet(2, 'E')"> </div>
                                 <div class="bullet F" onclick="setBullet(2, 'F')"> </div>
                             </div>
-                        </div> 
                     </td>
 
                     <td> 
-                        <div class="mm-wrapper">
-                            <div id="chooser-3" class="bullet" onclick="$('#overlay-3').show()"> </div>
+                            <div id="chooser-3" class="bullet"> </div>
                             <div id="overlay-3" class="chooser-overlay">
                                 <div class="bullet A" onclick="setBullet(3, 'A')"> </div>
                                 <div class="bullet B" onclick="setBullet(3, 'B')"> </div>
@@ -93,13 +88,11 @@
                                 <div class="bullet D" onclick="setBullet(3, 'D')"> </div>
                                 <div class="bullet E" onclick="setBullet(3, 'E')"> </div>
                                 <div class="bullet F" onclick="setBullet(3, 'F')"> </div>
-                            </div>
                         </div> 
                     </td>
 
                     <td> 
-                        <div class="mm-wrapper">
-                            <div id="chooser-4" class="bullet" onclick="$('#overlay-4').show()"> </div>
+                            <div id="chooser-4" class="bullet"> </div>
                             <div id="overlay-4" class="chooser-overlay">
                                 <div class="bullet A" onclick="setBullet(4, 'A')"> </div>
                                 <div class="bullet B" onclick="setBullet(4, 'B')"> </div>
@@ -107,36 +100,31 @@
                                 <div class="bullet D" onclick="setBullet(4, 'D')"> </div>
                                 <div class="bullet E" onclick="setBullet(4, 'E')"> </div>
                                 <div class="bullet F" onclick="setBullet(4, 'F')"> </div>
-                            </div>
                         </div> 
                     </td>
 
-                    <td colspan=4> <div id="check"><a class="btn check">&nbsp; START &nbsp;</a></div></td>
-            </tr>
-
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan=4> <div id="check"><a class="btn check"><p class="start">&nbsp; START &nbsp;</p></a></div></td>
             </tr>
         </tbody>
 
     </table>
+    </div> 
 </div>
     </div>
 
     <div class="row" >
-        <p class="col-md-4 col-xs-10 col-xs-offset-1 col-lg-offset-0">
-            <strong> Anleitung: </strong>
-            Ein Spieler (der Codierer) legt zu Beginn einen vierstelligen geordneten Farbcode fest, der aus sechs Farben ausgewählt wird; eine Farbe kann auch mehrmals verwendet werden. Der andere Spieler (der Rater) versucht, den Code herauszufinden. Dazu setzt er einen gleichartigen Farbcode als Frage; beim ersten Zug blind geraten, bei den weiteren Zügen mit Hilfe der Antworten zu den vorangegangenen Zügen.
-            <br>
-            <br>
-            Auf jeden Zug hin bekommt der Rater die Information, wie viele Stifte er in Farbe und Position richtig gesetzt hat und wie viele Stifte zwar die richtige Farbe haben, aber an einer falschen Position stehen. Ein Treffer in Farbe und Position wird durch einen schwarzen Stift angezeigt, ein farblich richtiger Stift an falscher Stelle durch einen weißen Stift. Es gibt auch Versionen mit roten statt schwarzen Stiften zur Anzeige von Treffern in Farbe und Position. Alle Fragen und Antworten bleiben bis zum Ende des Spiels sichtbar.
-            <br>
-            <br>
-            Ziel des Raters ist es, den Farbcode mit möglichst wenigen Fragen zu erraten. Es gibt auch Varianten mit zwei Spielbrettern, wo jeder zugleich auf einem Brett Rater und auf dem anderen Brett Codierer ist und beide abwechselnd fragen. Die Aufgabe des Codierers nach dem Festlegen des Farbcodes ist vollkommen vorherbestimmt; er hat keinerlei Wahl.
-        </p>
-
+        <div class="text-body">
+            <p class="col-md-4 col-xs-10 col-xs-offset-1 col-lg-offset-0 ">
+                <strong> Anleitung: </strong>
+                Ein Spieler (der Codierer) legt zu Beginn einen vierstelligen geordneten Farbcode fest, der aus sechs Farben ausgewählt wird; eine Farbe kann auch mehrmals verwendet werden. Der andere Spieler (der Rater) versucht, den Code herauszufinden. Dazu setzt er einen gleichartigen Farbcode als Frage; beim ersten Zug blind geraten, bei den weiteren Zügen mit Hilfe der Antworten zu den vorangegangenen Zügen.
+                <br>
+                <br>
+                Auf jeden Zug hin bekommt der Rater die Information, wie viele Stifte er in Farbe und Position richtig gesetzt hat und wie viele Stifte zwar die richtige Farbe haben, aber an einer falschen Position stehen. Ein Treffer in Farbe und Position wird durch einen schwarzen Stift angezeigt, ein farblich richtiger Stift an falscher Stelle durch einen weißen Stift. Es gibt auch Versionen mit roten statt schwarzen Stiften zur Anzeige von Treffern in Farbe und Position. Alle Fragen und Antworten bleiben bis zum Ende des Spiels sichtbar.
+                <br>
+                <br>
+                Ziel des Raters ist es, den Farbcode mit möglichst wenigen Fragen zu erraten. Es gibt auch Varianten mit zwei Spielbrettern, wo jeder zugleich auf einem Brett Rater und auf dem anderen Brett Codierer ist und beide abwechselnd fragen. Die Aufgabe des Codierers nach dem Festlegen des Farbcodes ist vollkommen vorherbestimmt; er hat keinerlei Wahl.
+            </p>
+        </div>
     </div>
     </div>
 </body>
