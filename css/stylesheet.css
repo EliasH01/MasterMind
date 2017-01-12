@@ -1,4 +1,6 @@
-
+div {
+    border: 1px solid red;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -71,7 +73,7 @@ body {
     display: none;
     background-color: #ecf0f1;
     z-index: 99;
-    top:-0px;
+    top: 44px;
     left: -70px;
     border-radius: 50px;
     box-shadow: 10px 20px 20px #2c3e50;
@@ -79,6 +81,7 @@ body {
 
 .mm-wrapper {
     position: relative;
+    margin-left: 25%;
 }
 
 .black {
@@ -149,4 +152,8 @@ body {
 
 .foreground {
     z-index: 98;
+}
+
+.instruction {
+    margin-top: 50px;
 }
