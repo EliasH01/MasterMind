@@ -28,23 +28,34 @@
 
 
 <body>
-    <br>
-    <br>
+    <br/>
+    <br/>
     <div class="logo">
         <img style="width: 300px;" src="img/logo.svg" alt="MstrMnd">
     </div>
-                  <h3 class="restart-button">Press to restart</h3>
-    <div class="row" >
+    <h3 class="restart-button">Press to restart <span class="glyphicon glyphicon-arrow-up"></span> </h3>
+        <div class="col-xs-2 col-xs-offset-5">Noch <span id="rounds-display"></span> Versuch(e)...</div>
+        <div class="col-xs-2 col-xs-offset-5"><span id="time"></span> Sekunden</div>
 
+        <div id="win" class="initial-hidden col-xs-2 col-xs-offset-5">
+            <strong>Gewonnen</strong>
+            <div class="col-xs-2 col-xs-offset-5">
+            <img src="img/win.svg" class="smiley">
+            </div>
+        </div>
+        <div id="loose" class="initial-hidden col-xs-2 col-xs-offset-5">
+            <strong>Verloren</strong>
+            <div class="col-xs-2 col-xs-offset-5">
+            <img src="img/loose.svg" class="smiley">
+            </div>
+        </div>
 
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
 <div class="row">
     <div class="col-xs-12 col-offset-xs-0 col-md-offset-2">
@@ -112,9 +123,13 @@
 </div>
     </div>
 
-    <div class="row" >
-        <div class="text-body">
-            <p class="col-md-4 col-xs-10 col-xs-offset-1 col-lg-offset-0 ">
+        <div class="col-md-4 col-md-offset-4">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <strong> Anleitung: </strong>
                 Ein Spieler (der Codierer) legt zu Beginn einen vierstelligen geordneten Farbcode fest, der aus sechs Farben ausgewählt wird; eine Farbe kann auch mehrmals verwendet werden. Der andere Spieler (der Rater) versucht, den Code herauszufinden. Dazu setzt er einen gleichartigen Farbcode als Frage; beim ersten Zug blind geraten, bei den weiteren Zügen mit Hilfe der Antworten zu den vorangegangenen Zügen.
                 <br>
@@ -123,8 +138,8 @@
                 <br>
                 <br>
                 Ziel des Raters ist es, den Farbcode mit möglichst wenigen Fragen zu erraten. Es gibt auch Varianten mit zwei Spielbrettern, wo jeder zugleich auf einem Brett Rater und auf dem anderen Brett Codierer ist und beide abwechselnd fragen. Die Aufgabe des Codierers nach dem Festlegen des Farbcodes ist vollkommen vorherbestimmt; er hat keinerlei Wahl.
-            </p>
         </div>
+
     </div>
     </div>
 </body>
