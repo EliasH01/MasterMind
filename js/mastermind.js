@@ -20,7 +20,6 @@ function init() {
   startTime = 0;
   rounds = 12;
   window.clearInterval(timer)
-  rounds = 12;
 }
 
 function check() {
