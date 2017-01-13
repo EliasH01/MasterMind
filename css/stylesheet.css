@@ -116,7 +116,7 @@ body {
     }
     
     .chooser-overlay {
-        width: 252px;
+        width: 256px;
         height: 143px;
         margin-left: 69px;
         border-radius: 36px;
@@ -128,8 +128,8 @@ body {
         margin-top: 4px;
     }
     .chooser-overlay .bullet {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 11px;
+        margin-right: 11px;
         margin-top: 5px;
     }
 
