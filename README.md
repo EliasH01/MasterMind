@@ -3,8 +3,8 @@
 ## Kurzerklärung:
 
 
-Mastermind ist ein ,bahnbrechendes Logik, denk, Spiel mit Suchtfaktor!
-Es ist sehr einfach zu lernen, aber schwierig zu meistern!
+**Mastermind ist ein, bahnbrechendes Logik, denk, Spiel mit Suchtfaktor!**
+_Es ist sehr einfach zu lernen, aber schwierig zu meistern!_
 
 Mastermind funktioniert so dass der Computer eine Farben reihe von 4 aus insgesamt 6 Farben vorgibt, Beispielsweise: (Rot) (Gelb) (Grün) (Blau).
 
@@ -27,8 +27,8 @@ Wenn der Spieler 12 Züge ohne das er den Code herausfindet hat er verloren.
 
 Technische Voraussetzungen
 
-eine Internet Verbindung mit 10 gb/s
-Mind. 4.1 Ghz Prozessor
-Mind. Nvidia GTX 1080 Ti SLI
-Mind. 16Gb Ram, 32 gb empfohlen.
-Windows 10 Pro
+* eine Internet Verbindung mit 10 gb/s
+* Mind. 4.1 Ghz Prozessor
+* Mind. Nvidia GTX 1080 Ti SLI
+* Mind. 16Gb Ram, 32 gb empfohlen.
+* Windows 10 Pro
