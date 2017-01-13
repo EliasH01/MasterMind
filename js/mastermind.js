@@ -19,7 +19,7 @@ function init() {
     $('.initial-hidden').hide()
     startTime = 0;
     window.clearInterval(timer)
-    var rounds  12;
+
 
 }
 
