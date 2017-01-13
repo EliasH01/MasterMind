@@ -2,6 +2,7 @@
 
 ## Kurzerklärung:
 
+
 Mastermind ist ein ,bahnbrechendes Logik, denk, Spiel mit Suchtfaktor!
 Es ist sehr einfach zu lernen, aber schwierig zu meistern!
 
