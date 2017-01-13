@@ -18,8 +18,8 @@ function init() {
     $('div[id^="chooser-"]').removeClass().addClass('bullet')
     $('.initial-hidden').hide()
     startTime = 0;
+    rounds = 12;
     window.clearInterval(timer)
-
 
 }
 

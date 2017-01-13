@@ -114,6 +114,7 @@ body {
         margin: 0px 0px 0px 0px;
         margin-top: -3px;
     }
+    
     .chooser-overlay {
         width: 252px;
         height: 143px;
@@ -124,6 +125,7 @@ body {
 
     .mm-result .bullet {
         margin-left: 0px;
+        margin-top: 4px;
     }
     .chooser-overlay .bullet {
         margin-left: 10px;
@@ -184,3 +186,4 @@ body {
 .align-center {
     text-align: center;
 }
+
