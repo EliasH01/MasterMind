@@ -21,53 +21,69 @@
         <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300,300i,700" rel="stylesheet">
         <link rel="stylesheet" href="css/stylesheet.css">
         <script src="js/mastermind.js" ></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
 
     <body>
-        <div class="col-xs-12">
-            <div class="logo">
-                <img style="width: 100%;" src="img/logo.svg" alt="MstrMnd">
-            </div>
-            
-                <h3 class="restart-button">
-                    Press to restart 
-                    <span class="glyphicon glyphicon-arrow-up">
-                    </span> 
-                </h3>
+        <div class="container">
+            <br/>
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="logo">
+                    <img style="width: 100%;" src="img/mndmstr.png" alt="MstrMnd">
+                    <h3 class="restart-button">
+                        <strong>CLICK RESTART</strong> 
+                        <span class="glyphicon glyphicon-arrow-up">
+                        </span> 
+                    </h3>
+         </div>
 
-                <div class="col-xs-2 col-xs-offset-5">
-                    Noch 
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-1 col-sm-2 align-center">
                     <span id="rounds-display"></span> 
                     Versuch(e)...
                 </div>
 
-                <div class="col-xs-2 col-xs-offset-5">
+
+                <div class="col-xs-4 col-xs-offset-1 col-sm-2 col-sm-offset-1 align-center">
                     <span id="time"></span> 
                     Sekunden
                 </div>
+            </div>
 
-                <div id="win" class="initial-hidden col-xs-2 col-xs-offset-5">
-
-                    <strong>Gewonnen</strong>
-                    <div class="col-xs-2 col-xs-offset-5">
-                        <img src="img/win.svg" class="smiley">
-                    </div>
-                </div>
-
-                <div id="loose" class="initial-hidden col-xs-2 col-xs-offset-5">
-                    <strong>
-                        Verloren
-                    </strong>
-                    <div class="col-xs-2 col-xs-offset-5">
-                        <img src="img/loose.svg" class="smiley">
-                    </div>
-
-                </div>
         </div>
 
 
-        <div class="container foreground mm-wrapper col-xs-4">
-            <table class="table-bordered mm-table" >
+
+            <div id="win" class="initial-hidden col-xs-4 col-xs-offset-4">
+
+                <strong class="align-center">
+                    Gewonnen
+                </strong>
+
+                <div class="col-xs-24 col-xs-offset-4">
+                    <img src="img/win.svg" class="smiley">
+                </div>
+            </div>
+
+            <div id="loose" class="initial-hidden col-xs-4 col-xs-offset-4">
+
+                <strong class="align-center">
+                    Verloren
+                </strong>
+
+                <div class="col-xs-2 col-xs-offset-5">
+                    <img src="img/loose.svg" class="smiley">
+                </div>
+
+            </div>
+        <br/>
+        </div>
+        <div class="container foreground mm-wrapper">
+            <table class="table-bordered mm-table col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-offset-2" >
 
                 <thead>
                 </thead>
@@ -122,7 +138,7 @@
                                 </div> 
                             </td>
 
-                            <td colspan=4> 
+                            <td class="bg-success" colspan=4> 
                                 <div id="check">
                                     <a class="btn check">
                                         <p class="start">
@@ -136,9 +152,10 @@
 
             </table>
         </div> 
+        
 
-        <div class="">
-
+        <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3">
+                <br/>
                 <strong> Anleitung: </strong>
                 Ein Spieler (der Codierer) legt zu Beginn einen vierstelligen geordneten Farbcode fest, der aus sechs Farben ausgewählt wird; eine Farbe kann auch mehrmals verwendet werden. Der andere Spieler (der Rater) versucht, den Code herauszufinden. Dazu setzt er einen gleichartigen Farbcode als Frage; beim ersten Zug blind geraten, bei den weiteren Zügen mit Hilfe der Antworten zu den vorangegangenen Zügen.
                 <br>
