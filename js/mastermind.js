@@ -19,7 +19,7 @@ function init() {
     $('.initial-hidden').hide()
     startTime = 0;
     window.clearInterval(timer)
-    var rounds  12;
+    rounds = 12;
 
 }
 
@@ -43,19 +43,21 @@ function check() {
 
     $('#rounds-display').text(rounds)
     var test = game.slice();
+    var result2 = result.slice();
     var clr = 0;
     var clrpos = 0;
-
-    for (var idx = 0; idx < result.length; idx++) {
-        if (result[idx] == test[idx]) {
+    
+    for (var idx = 0; idx < result2.length; idx++) {
+        if (result2[idx] == test[idx]) {
             clrpos++
+            result2[idx] = undefined
             test[idx] = undefined
         }
     }
 
-    for (var idx = 0; idx < result.length; idx++) {
+    for (var idx = 0; idx < result2.length; idx++) {
         var idxFound = test.indexOf(result[idx])
-        if (idxFound >= 0) {
+        if (result2[idx] != undefined && idxFound >= 0) {
             test[idxFound] = undefined
             clr++
         }
