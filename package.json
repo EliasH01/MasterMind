@@ -1,0 +1,36 @@
+{
+  "name": "mndmstr",
+  "version": "1.0.0",
+  "description": "Mind-blowing logic game",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theincredibleron/MasterMind.git"
+  },
+  "author": "Elias Hennemeyer, Ron Lange",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theincredibleron/MasterMind/issues"
+  },
+  "homepage": "https://github.com/theincredibleron/MasterMind#readme",
+
+  "devDependencies": {
+    "electron": "^1.4.14",
+    "electron-builder": "^11.2.4"
+  },
+
+  "postinstall": "install-app-deps",
+  "build": {
+    "appId": "mndmstr",
+    "mac": {
+      "category": "public.app-category.games"
+    },
+    "win": {
+      "iconUrl": "(windows-only) https link to icon"
+    }
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build"
+  }
+}

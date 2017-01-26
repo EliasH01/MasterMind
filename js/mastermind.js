@@ -12,6 +12,8 @@ var startTime = 0;
 var timer;
 
 function init() {
+  $('#check').click(check)
+
   game = [getColor(), getColor(), getColor(), getColor()];
   $('.mm-result').fadeOut()
     // $('.mm-result').remove() 
@@ -20,6 +22,9 @@ function init() {
   startTime = 0;
   rounds = 12;
   window.clearInterval(timer)
+  timer = undefined;
+  $('#time').text(startTime)
+  $('#rounds-display').text(rounds)
 }
 
 function check() {
@@ -40,7 +45,6 @@ function check() {
     }, 1000)
   }
 
-  $('#rounds-display').text(rounds)
   var test = game.slice();
   var result2 = result.slice();
   var clr = 0;
@@ -68,14 +72,22 @@ function check() {
   if (rounds == 0 && clrpos < 4) {
     // Verloren
     $('#loose').show()
+    showRow(game, 4, 0, $('.mm-solution'))
     window.clearInterval(timer)
+    $('#check').off()
   } else if (clrpos == 4) {
     // Gewonnen!
     $('#win').show()
     window.clearInterval(timer)
+    $('#check').off()
   }
 
-  var tableRow = '<tr class="mm-result"><td><div class="bullet ' + result[0] + '"> </div></td><td><div class="bullet ' + result[1] + '"> </div></td><td><div class="bullet ' + result[2] + '"> </div></td><td><div class="bullet ' + result[3] + '"> </div></td> ';
+  $('#rounds-display').text(rounds)
+  showRow(result, clrpos, clr, $('.mm-active'))
+}
+
+function showRow(colors, clrpos, clr, element) {
+  var tableRow = '<tr class="mm-result"><td><div class="bullet ' + colors[0] + '"> </div></td><td><div class="bullet ' + colors[1] + '"> </div></td><td><div class="bullet ' + colors[2] + '"> </div></td><td><div class="bullet ' + colors[3] + '"> </div></td> ';
   for (var i = 0; i < 4; i++) {
     var resClass = '';
     if (clrpos > 0) {
@@ -88,9 +100,7 @@ function check() {
     tableRow += '<td class="' + resClass + '"></td>'
   }
   tableRow += '</tr>';
-  $('.mm-active').after(tableRow)
-
-  console.log(tableRow)
+  element.after(tableRow)
 }
 
 function setBullet(columnIdx, value) {
@@ -100,7 +110,6 @@ function setBullet(columnIdx, value) {
 }
 
 $(document).ready(function() {
-  $('#check').click(check)
   $('.logo').click(init)
   $('div[id^="overlay-"]').each(function(idx, elem) {
     $('#chooser-' + (idx + 1)).click(function() {
