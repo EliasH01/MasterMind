@@ -72,7 +72,7 @@ function check() {
   if (rounds == 0 && clrpos < 4) {
     // Verloren
     $('#loose').show()
-    showRow(game, 4, 0, $('.mm-solution'))
+    showRow(game, -1, 0, $('.mm-solution'))
     window.clearInterval(timer)
     $('#check').off()
   } else if (clrpos == 4) {
@@ -87,17 +87,19 @@ function check() {
 }
 
 function showRow(colors, clrpos, clr, element) {
-  var tableRow = '<tr class="mm-result"><td><div class="bullet ' + colors[0] + '"> </div></td><td><div class="bullet ' + colors[1] + '"> </div></td><td><div class="bullet ' + colors[2] + '"> </div></td><td><div class="bullet ' + colors[3] + '"> </div></td> ';
-  for (var i = 0; i < 4; i++) {
-    var resClass = '';
-    if (clrpos > 0) {
-      resClass = 'black';
-      clrpos--;
-    } else if (clr > 0) {
-      resClass = 'white';
-      clr--;
+  var tableRow = '<tr class="mm-result"><td class="mm-result-start"><div class="bullet ' + colors[0] + '"> </div></td><td><div class="bullet ' + colors[1] + '"> </div></td><td><div class="bullet ' + colors[2] + '"> </div></td><td class="mm-result-end"><div class="bullet ' + colors[3] + '"> </div></td> ';
+  if (clrpos != -1) {
+    for (var i = 0; i < 4; i++) {
+      var resClass = '';
+      if (clrpos > 0) {
+        resClass = 'black';
+        clrpos--;
+      } else if (clr > 0) {
+        resClass = 'white';
+        clr--;
+      }
+      tableRow += '<td class="mm-clr ' + resClass + '"></td>'
     }
-    tableRow += '<td class="' + resClass + '"></td>'
   }
   tableRow += '</tr>';
   element.after(tableRow)

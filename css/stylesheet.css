@@ -1,9 +1,23 @@
 
+table {
+    border: none !important;
+}
 
+.header {
+    background-color: rgba(255,255,255,0.6);
+    height: 120px;
+    padding: 20px;
+    width: 100%;
+}
 body {
     font-family: 'Raleway', sans-serif;
     text-align: justify;
     font-size: 14px;
+    line-height: 1em;
+    background-image: url(/home/praktikant/workspace/img/schreibtisch.png);
+    background-repeat: repeat-y;      
+    background-size: 100%;
+    color: black;
 }
 
 .mm-result {
@@ -18,19 +32,34 @@ body {
     margin-left: 25px
 }
 
-.btn {
-    color: #2980b9;
-}
-
-.check {
-    font-family: 'anton';
-    font-size: 30px;
-    height: 114px;
-    text-align: center;
-}
-
 .start {
     margin-top: 25px;
+    font-family: 'anton';
+    font-size: 30px;
+    height: 110px;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+#check {
+    width: 100px;
+    border-radius: 0px 55px 0px 0px;
+    background-color: #2ecc71;
+    height: 112px;
+    padding: 1em;
+    padding-top: 48px;
+}
+
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    color: #9b59b6;
+}
+
+a:hover {
+    color: #ecf0f1;
 }
 
 .bullet {
@@ -70,20 +99,20 @@ body {
 
 .chooser-overlay {
     height: 110px;
-    width: 685px;
+    width: 681px;
     position: absolute;
     display: none;
     background-color: #ecf0f1;
     z-index: 99;
     top: 0px;
-    left: -70px;
-    border-radius: 50px;
-    box-shadow: 10px 20px 20px #2c3e50;
+    left: 65px;
+    border-radius: 55px;
+    box-shadow: 10px 20px 20px black;
 }
 
 .mm-wrapper {
     position: relative;
-    z-index: 0
+    z-index: 0;
 }
 
 .black {
@@ -95,9 +124,7 @@ body {
 }
 
 .logo {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100px;
 }
 @media only screen and (max-width: 736px) {
     .logo {
@@ -140,7 +167,10 @@ body {
     .start {
     margin-top: 120%;
     }
+
 }
+
+
 
 .mm-result:last-child {
     border-radius: 0px 0px 0px 50px;
@@ -157,8 +187,11 @@ body {
 .mm-table {
     background-color: #ecf0f1;
     z-index: 98;
-        box-shadow: 0px 0px 5px #2c3e50;
-
+    box-shadow: 0px 0px 5px #2c3e50;
+    width: 400px;
+    border-radius: 55px 55px 0px 55px;
+    margin-top: 100px;
+    margin-left: 125px;
 }
 
 .initial-hidden {
@@ -170,7 +203,7 @@ body {
 }
 
 #loose {
-
+    margin-bottom: 40px;
 }
 
 .win-loose {
@@ -179,11 +212,77 @@ body {
 }
 
 .smiley {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
 }
 
-.align-center {
+
+.backgroundcolor {
+    background-color: white;
+    width: 1000px;
+    margin-left: 15%;
+    height: 1000px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+td.bg-radius {
+    border-radius: 50px;
+}
+
+#loose .mm-table {
+    border-radius: 15px;
+}
+
+#loose .mm-result-start {
+    border-radius: 0 0 0 15px;
+}
+
+#loose .mm-result-end {
+    border-radius: 0 0 15px;
+}
+
+.mm-result:last-child .mm-result-start {
+    border-radius: 0 0 0  50px;
+}
+
+.mm-clr {
+    border-right: 1px solid #bdc3c7;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.mm-clr:last-child {
+    border: none;
+}
+
+.instruction {
+    margin-top: 130px;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.6);
+}
+
+.stats {
+    font-family: 'anton';
+    color: #3498db;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.mm-solution {
     text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    height: 30px;
+    margin-bottom: 100px; 
 }
 
+.mm-solution-table {
+    margin-bottom: 30px;
+    background-color: #ecf0f1;
+    z-index: 98;
+    box-shadow: 0px 0px 5px #2c3e50;
+    width: 400px;
+    border-radius: 14px;
+    margin-left: 192px;
+    margin-top: 30px;
+}
